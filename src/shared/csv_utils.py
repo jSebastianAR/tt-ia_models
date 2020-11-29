@@ -8,13 +8,14 @@ def to_csv(list_content,filename,columns):
     town_df = pd.DataFrame(list_content,columns=COLUMNAS)
     town_df.to_csv('csv_dataset/' + filename + '.csv')
 
-def get_csv_data(filename):
+def get_csv_data(filename,param):
     #Lee el .csv
-    data = pd.read_csv(filename)
-    return data
+    df = pd.read_csv(filename)
+    return df
 
 def main():
-    get_csv_data('')
+    #get_csv_data('')
+    pass
     
 
 if __name__ == '__main__':
