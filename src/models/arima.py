@@ -1,5 +1,5 @@
 from shared import csv_utils
 
-def model(path):
-    data = csv_utils.get_csv_data(path)
-    return data
+class Arima():
+    def __init__(self, data_path):
+        self.data = csv_utils.get_csv_data(data_path)

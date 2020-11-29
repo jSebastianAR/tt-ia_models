@@ -1,7 +1,9 @@
 import os
-from models.arima import model as arima_model
+from models.arima import Arima
+from shared import csv_utils
 
 cwd = os.getcwd()
-data = arima_model(f"{cwd}/datasets/wheather-dataset/14002-ACATLAN DE JUAREZ.csv")
 
-print(data)
+arima_model = Arima(f"{cwd}/datasets/wheather-dataset/14002-ACATLAN DE JUAREZ.csv")
+
+print(arima_model.data)
